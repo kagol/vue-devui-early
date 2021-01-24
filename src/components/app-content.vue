@@ -41,7 +41,7 @@
 
 <script lang="ts">
 import { groupBy, map } from 'lodash-es'
-import { routesConfig } from '../route-config'
+import { routesConfig } from './component.route'
 import AppDemoCell from './app-demo-cell.vue'
 
 export default {
