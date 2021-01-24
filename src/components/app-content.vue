@@ -66,21 +66,21 @@ export default {
     generateComponentData() {
       // TODO: 补充类型
       const routesWithData = map(routesConfig, (route: any) => {
-        if (!route.data) {
-          route.data = {};
+        if (!route.meta) {
+          route.meta = {};
         }
         return route;
       });
       const groupedRoutesObj = groupBy(routesWithData,
         (route: any) => {
-          return (route as any).data.type || '通用';
+          return (route as any).meta.type || '通用';
         });
       for (const key in groupedRoutesObj) {
         if (key) {
           const group = groupedRoutesObj[key].map((item: any) => {
-            if (item.data.name) {
+            if (item.meta.name) {
               return {
-                title: item.data.name + ' ' + item.data.cnName,
+                title: item.meta.name + ' ' + item.meta.cnName,
                 link: item.path,
               };
             } else {
