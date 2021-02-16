@@ -6,8 +6,7 @@ const ThemeGuideComponent = null
 export const routesConfig = [
   {
     path: '',
-    component: GetStartedComponent,
-    meta: { nodisplay: true },
+    redirect: '/components/button'
   },
   {
     path: 'get-start',
