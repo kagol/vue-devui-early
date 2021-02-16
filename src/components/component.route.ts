@@ -17,7 +17,7 @@ export const routesConfig = [
   {
     path: 'color',
     component: ColorComponent,
-    meta: {nodisplay: true}
+    meta: { nodisplay: true }
   },
   {
     path: 'theme-guide',
