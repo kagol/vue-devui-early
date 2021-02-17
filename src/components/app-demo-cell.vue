@@ -8,6 +8,10 @@
         <div style="margin-bottom: 20px;" v-html="data.tmw"></div>
       </div>
       <!-- TODO: d-tabs -->
+      <d-tabs :showContent="false" :activeTab="componentTab" @activeTabChange="activeTabChange($event)">
+        <d-tab id="demo" title="Demo" tabId="demo"></d-tab>
+        <d-tab id="api" title="API" tabId="api"></d-tab>
+      </d-tabs>
     </div>
     <div class="examples-viewer">
       <div class="examples-viewer-wrapper">
@@ -20,11 +24,15 @@
 
 <script>
 import DevUIButtonDemo from '../../devui/button/demo/button-demo.vue'
+import DevUITabs from '../../devui/tabs/tabs.vue'
+import DevUITab from '../../devui/tabs/tab.vue'
 
 export default {
   name: 'app-demo-cell',
   components: {
-    'd-button-demo': DevUIButtonDemo
+    'd-button-demo': DevUIButtonDemo,
+    'd-tabs': DevUITabs,
+    'd-tab': DevUITab,
   },
   data() {
     return {
