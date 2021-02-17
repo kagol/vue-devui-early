@@ -29,6 +29,7 @@
             <router-link :to="component.link">{{ component.title }}</router-link>
           </div>
         </div>
+        <d-accordion :data="componentsData" :linkType="'routerLink'"></d-accordion>
       </nav>
     </div>
     <div class="doc-viewer-container">
@@ -43,11 +44,13 @@
 import { groupBy, map } from 'lodash-es'
 import { routesConfig } from './component.route'
 import AppDemoCell from './app-demo-cell.vue'
+import DevUIAccordion from '../../devui/accordion/accordion.vue'
 
 export default {
   name: 'app-content',
   components: {
     AppDemoCell,
+    'd-accordion': DevUIAccordion
   },
   data(): any {
     return {
