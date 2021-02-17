@@ -12,14 +12,20 @@
     <div class="examples-viewer">
       <div class="examples-viewer-wrapper">
         <!-- TODO: Demo列表 -->
+        <d-button-demo></d-button-demo>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import DevUIButtonDemo from '../../devui/button/demo/button-demo.vue'
+
 export default {
   name: 'app-demo-cell',
+  components: {
+    'd-button-demo': DevUIButtonDemo
+  },
   data() {
     return {
       data: {},
