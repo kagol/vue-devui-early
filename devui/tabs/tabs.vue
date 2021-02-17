@@ -9,6 +9,10 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'd-tabs'
+  name: 'd-tabs',
+  props: {
+    showContent: Boolean,
+  },
+  emits: ['activeTabChange']
 })
 </script>

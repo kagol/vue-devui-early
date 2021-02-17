@@ -8,6 +8,11 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'd-tab'
+  name: 'd-tab',
+  props: {
+    id: String,
+    title: String,
+    tabId: String,
+  }
 })
 </script>
