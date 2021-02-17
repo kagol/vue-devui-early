@@ -23,12 +23,12 @@
       </ul>
       <nav class="side-nav">
         <!-- TODO: 左侧组件导航 d-accordion -->
-        <div v-for="category in componentsData" v-bind:key="category">
+        <!-- <div v-for="category in componentsData" v-bind:key="category">
           {{ category.title }}
           <div v-for="component in category.children" v-bind:key="component">
             <router-link :to="component.link">{{ component.title }}</router-link>
           </div>
-        </div>
+        </div> -->
         <d-accordion :data="componentsData" :linkType="'routerLink'"></d-accordion>
       </nav>
     </div>
