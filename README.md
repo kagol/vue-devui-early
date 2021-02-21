@@ -4,6 +4,8 @@ Vue3版本的DevUI组件库，基于[https://github.com/devcloudfe/ng-devui](htt
 
 DevUI官方网站：[https://devui.design](https://devui.design)
 
+Tips: 该项目目前还处于孵化和演进阶段，欢迎大家一起参与建设🤝
+
 ## TODO
 
 - [ ] Button 按钮
