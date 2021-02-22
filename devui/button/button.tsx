@@ -5,6 +5,8 @@ export type IButtonStyle = 'common' | 'primary' | 'text' | 'text-dark' | 'danger
 export type IButtonPosition = 'left' | 'right' | 'default';
 export type IButtonSize = 'lg' | 'md' | 'sm' | 'xs';
 
+import './button.scss';
+
 export const Button = defineComponent({
   props: {
     id: {
