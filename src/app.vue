@@ -102,7 +102,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import AppContent from './components/app-content.vue'
-import DevUIButton from '../devui/button/button.vue'
+import DevUIButton from '../devui/button/button'
 
 export default defineComponent({
   name: 'App',
