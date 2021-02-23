@@ -8,6 +8,7 @@ export type IButtonSize = 'lg' | 'md' | 'sm' | 'xs';
 import './button.scss';
 
 export default defineComponent({
+  name: 'd-button',
   props: {
     id: {
       type: [String, Number]
@@ -29,8 +30,8 @@ export default defineComponent({
       default: 'default'
     },
     bordered: {
-      type: String as () => IButtonPosition,
-      default: 'default'
+      type: Boolean,
+      default: false
     },
     icon: {
       type: String,

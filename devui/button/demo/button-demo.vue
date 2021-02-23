@@ -20,8 +20,8 @@
 <script>
 import { defineComponent } from 'vue'
 import DevUICodeBox from '../../shared/devui-codebox/devui-codebox.vue'
-import DevUIButtonPrimary from './primary/primary.vue'
-import DevUIButtonCommon from './common/common.vue'
+import DevUIButtonPrimary from './primary/primary'
+import DevUIButtonCommon from './common/common'
 
 export default defineComponent({
   name: 'd-button-demo',
@@ -29,6 +29,14 @@ export default defineComponent({
     'd-codebox': DevUICodeBox,
     'd-button-primary': DevUIButtonPrimary,
     'd-button-common': DevUIButtonCommon,
+  },
+  setup() {
+    const primarySource = {};
+    const commonSource = {};
+    return {
+      primarySource,
+      commonSource
+    }
   }
 })
 </script>
