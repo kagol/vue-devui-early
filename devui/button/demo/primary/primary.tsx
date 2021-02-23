@@ -6,8 +6,9 @@ export default defineComponent({
   setup() {
     return () => {
       return (
-        <div>
-          <Button bsStyle="primary">primary</Button>
+        <div style="display:flex;">
+          <Button bsStyle="primary" style="margin-right: 4px">primary</Button>
+          <Button bsStyle="primary" disabled>Disabled</Button>
         </div>
       );
     }

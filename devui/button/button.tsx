@@ -9,6 +9,7 @@ import './button.scss';
 
 export default defineComponent({
   name: 'd-button',
+  inheritAttrs: false,
   props: {
     id: {
       type: [String, Number]
@@ -108,6 +109,7 @@ export default defineComponent({
           disabled={disabled}
           style={{ width: width }}
           onClick={onClick}
+          {...ctx.attrs}
           // dLoading
           // [showLoading]="showLoading"
           // [loadingTemplateRef]="loadingTemplateRef"
