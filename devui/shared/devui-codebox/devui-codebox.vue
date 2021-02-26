@@ -1,6 +1,7 @@
 <template>
   <div>
     devui codebox
+    <slot></slot>
   </div>
 </template>
 
