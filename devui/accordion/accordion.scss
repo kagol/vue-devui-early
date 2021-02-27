@@ -7,11 +7,11 @@
   display: block;
 }
 
-d-accordion-menu,
+.devui-accordion-menu-item,
 d-accordion-item,
 d-accordion-item-hreflink,
 d-accordion-item-routerlink,
-d-accordion-list {
+.devui-accordion-list {
   display: block;
 }
 
@@ -165,7 +165,7 @@ d-accordion-item-routerlink {
   }
 }
 
-d-accordion-list.devui-accordion-menu-hidden {
+.devui-accordion-list.devui-accordion-menu-hidden {
   display: none;
 }
 

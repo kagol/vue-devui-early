@@ -38,13 +38,13 @@
 import { groupBy, map } from 'lodash-es'
 import { routesConfig } from './component.route'
 import AppDemoCell from './app-demo-cell.vue'
-import DevUIAccordion from '../../devui/accordion/accordion'
+import Accordion from '../../devui/accordion/accordion'
 
 export default {
   name: 'app-content',
   components: {
     AppDemoCell,
-    'd-accordion': DevUIAccordion
+    'd-accordion': Accordion
   },
   data(): any {
     return {

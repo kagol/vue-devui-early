@@ -19,16 +19,16 @@
 
 <script>
 import { defineComponent } from 'vue'
-import DevUICodeBox from '../../shared/devui-codebox/devui-codebox.vue'
-import DevUIButtonPrimary from './primary/primary'
-import DevUIButtonCommon from './common/common'
+import CodeBox from '../../shared/devui-codebox/devui-codebox.vue'
+import ButtonPrimary from './primary/primary'
+import ButtonCommon from './common/common'
 
 export default defineComponent({
   name: 'd-button-demo',
   components: {
-    'd-codebox': DevUICodeBox,
-    'd-button-primary': DevUIButtonPrimary,
-    'd-button-common': DevUIButtonCommon,
+    'd-codebox': CodeBox,
+    'd-button-primary': ButtonPrimary,
+    'd-button-common': ButtonCommon,
   },
   setup() {
     const primarySource = {};
