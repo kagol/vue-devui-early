@@ -23,16 +23,16 @@
 </template>
 
 <script>
-import DevUIButtonDemo from '../../devui/button/demo/button-demo.vue'
-import DevUITabs from '../../devui/tabs/tabs.vue'
-import DevUITab from '../../devui/tabs/tab.vue'
+import ButtonDemo from '../../devui/button/demo/button-demo.vue'
+import Tabs from '../../devui/tabs/tabs.vue'
+import Tab from '../../devui/tabs/tab.vue'
 
 export default {
   name: 'app-demo-cell',
   components: {
-    'd-button-demo': DevUIButtonDemo,
-    'd-tabs': DevUITabs,
-    'd-tab': DevUITab,
+    'd-button-demo': ButtonDemo,
+    'd-tabs': Tabs,
+    'd-tab': Tab,
   },
   data() {
     return {
