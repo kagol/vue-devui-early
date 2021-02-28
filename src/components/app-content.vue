@@ -78,7 +78,7 @@ export default {
             if (item.meta.name) {
               return {
                 title: item.meta.name + ' ' + item.meta.cnName,
-                link: item.path,
+                link: '/components/' + item.path + '/demo',
               };
             } else {
               return {};

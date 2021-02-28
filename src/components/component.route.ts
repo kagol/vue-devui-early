@@ -3,6 +3,9 @@ import GetStartedComponent from './app-demo-cell.vue';
 import ColorComponent from './app-demo-cell.vue';
 import ThemeGuideComponent from './app-demo-cell.vue';
 
+import accordionRoutes from '../../devui/accordion/demo/accordion.route'
+import buttonRoutes from '../../devui/button/demo/button.route'
+
 export const routesConfig = [
   {
     path: '',
@@ -28,7 +31,7 @@ export const routesConfig = [
   {
     path: 'accordion',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '导航',
       enType: 'Navigation',
@@ -118,7 +121,7 @@ export const routesConfig = [
   {
     path: 'button',
     component: ExamplePanelComponent,
-
+    children: buttonRoutes,
     meta: {
       name: 'Button',
       cnName: '按钮',
