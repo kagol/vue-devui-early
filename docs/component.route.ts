@@ -1,35 +1,35 @@
-import ExamplePanelComponent from './app-demo-cell.vue';
-import GetStartedComponent from './app-demo-cell.vue';
-import ColorComponent from './app-demo-cell.vue';
-import ThemeGuideComponent from './app-demo-cell.vue';
+import { ExamplePanelComponent } from './example-panel.component';
+import { GetStartedComponent } from './get-started.component';
+import { ColorComponent } from './color/color.component';
+import { ThemeGuideComponent } from './theme-guide.component';
 
 export const routesConfig = [
   {
     path: '',
-    redirect: '/components/button',
+    redirectTo: 'get-start',
     pathMatch: 'full',
-    meta: {},
+    data: {},
   },
   {
     path: 'get-start',
     component: GetStartedComponent,
-    meta: { nodisplay: true },
+    data: { nodisplay: true },
   },
   {
     path: 'color',
     component: ColorComponent,
-    meta: {nodisplay: true}
+    data: {nodisplay: true}
   },
   {
     path: 'theme-guide',
     component: ThemeGuideComponent,
-    meta: { nodisplay: true },
+    data: { nodisplay: true },
   },
   {
     path: 'accordion',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/accordion/demo/accordion-demo.moudule').then((m) => m.AccordionDemoModule),
+    data: {
       type: '导航',
       enType: 'Navigation',
       name: 'Accordion',
@@ -39,8 +39,8 @@ export const routesConfig = [
   {
     path: 'alert',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/alert/demo/alert-demo.module').then((m) => m.AlertDemoModule),
+    data: {
       type: '反馈',
       enType: 'Feedback',
       name: 'Alert',
@@ -50,8 +50,8 @@ export const routesConfig = [
   {
     path: 'anchor',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/anchor/demo/anchor-demo.module').then((m) => m.AnchorDemoModule),
+    data: {
       type: '导航',
       enType: 'Navigation',
       name: 'Anchor',
@@ -61,9 +61,9 @@ export const routesConfig = [
   {
     path: 'auto-complete',
     component: ExamplePanelComponent,
-
-
-    meta: {
+    loadChildren: () =>
+      import('../../../devui/auto-complete/demo/auto-complete-demo.module').then((m) => m.AutoCompleteDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'AutoComplete',
@@ -73,8 +73,8 @@ export const routesConfig = [
   {
     path: 'avatar',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/avatar/demo/avatar-demo.module').then((m) => m.AvatarDemoModule),
+    data: {
       type: '数据展示',
       enType: 'Data Display',
       name: 'Avatar',
@@ -84,9 +84,9 @@ export const routesConfig = [
   {
     path: 'ImagePreview',
     component: ExamplePanelComponent,
-
-
-    meta: {
+    loadChildren: () =>
+      import('../../../devui/image-preview/demo/image-preview-demo.module').then((m) => m.ImagePreviewDemoModule),
+    data: {
       type: '数据展示',
       enType: 'Data Display',
       name: 'ImagePreview',
@@ -96,8 +96,8 @@ export const routesConfig = [
   {
     path: 'breadcrumb',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/breadcrumb/demo/breadcrumb-demo.module').then((m) => m.BreadCrumbDemoModule),
+    data: {
       type: '导航',
       enType: 'Navigation',
       name: 'Breadcrumb',
@@ -107,8 +107,8 @@ export const routesConfig = [
   {
     path: 'back-top',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/back-top/demo/back-top-demo.module').then((m) => m.BackTopDemoModule),
+    data: {
       type: '导航',
       enType: 'Navigation',
       name: 'BackTop',
@@ -118,8 +118,8 @@ export const routesConfig = [
   {
     path: 'button',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/button/demo/button-demo.module').then((m) => m.ButtonDemoModule),
+    data: {
       name: 'Button',
       cnName: '按钮',
     },
@@ -127,8 +127,8 @@ export const routesConfig = [
   {
     path: 'badge',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/badge/demo/badge-demo.module').then((m) => m.BadgeDemoModule),
+    data: {
       type: '数据展示',
       enType: 'Data Display',
       name: 'Badge',
@@ -138,8 +138,8 @@ export const routesConfig = [
   {
     path: 'card',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/card/demo/card-demo.module').then((m) => m.CardDemoModule),
+    data: {
       type: '数据展示',
       enType: 'Data Display',
       name: 'Card',
@@ -149,8 +149,8 @@ export const routesConfig = [
   {
     path: 'carousel',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/carousel/demo/carousel-demo.module').then((m) => m.CarouselDemoModule),
+    data: {
       type: '数据展示',
       enType: 'Data Display',
       name: 'Carousel',
@@ -160,8 +160,8 @@ export const routesConfig = [
   {
     path: 'checkbox',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/checkbox/demo/checkbox-demo.module').then((m) => m.CheckBoxDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'CheckBox',
@@ -171,8 +171,8 @@ export const routesConfig = [
   {
     path: 'common',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/common/demo/common-demo.module').then((m) => m.CommonDemoModule),
+    data: {
       name: 'Common',
       cnName: '公共方法',
     },
@@ -180,8 +180,8 @@ export const routesConfig = [
   {
     path: 'datatable',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/data-table/demo/data-table-demo.module').then((m) => m.DataTableDemoModule),
+    data: {
       type: '数据展示',
       enType: 'Data Display',
       name: 'DataTable',
@@ -191,8 +191,8 @@ export const routesConfig = [
   {
     path: 'datepicker',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/datepicker/demo/datepicker-demo.module').then((m) => m.DatepickerDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'DatePicker',
@@ -202,9 +202,9 @@ export const routesConfig = [
   {
     path: 'multi-auto-complete',
     component: ExamplePanelComponent,
-
-
-    meta: {
+    loadChildren: () =>
+      import('../../../devui/multi-auto-complete/demo/multi-auto-complete-demo.module').then((m) => m.MultiAutoCompleteDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'MultiAutoComplete',
@@ -214,8 +214,8 @@ export const routesConfig = [
   {
     path: 'form',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/form/demo/form-demo.module').then((m) => m.FormDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'Form',
@@ -225,8 +225,8 @@ export const routesConfig = [
   {
     path: 'fullscreen',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/fullscreen/demo/fullscreen-demo.module').then((m) => m.FullscreenDemoModule),
+    data: {
       name: 'Fullscreen',
       cnName: '全屏',
     },
@@ -234,8 +234,8 @@ export const routesConfig = [
   {
     path: 'transfer',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/transfer/demo/transfer-demo.module').then((m) => m.TransferDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'Transfer',
@@ -245,8 +245,8 @@ export const routesConfig = [
   {
     path: 'dragdrop',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/dragdrop/demo/dragdrop-demo.module').then((m) => m.DragDropDemoModule),
+    data: {
       name: 'DragDrop',
       cnName: '拖拽',
     },
@@ -254,8 +254,8 @@ export const routesConfig = [
   {
     path: 'drawer',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/drawer/demo/drawer-demo.module').then((m) => m.DrawerDemoModule),
+    data: {
       type: '反馈',
       enType: 'Feedback',
       name: 'Drawer',
@@ -265,8 +265,8 @@ export const routesConfig = [
   {
     path: 'dropdown',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/dropdown/demo/dropdown-demo.module').then((m) => m.DropdownDemoModule),
+    data: {
       type: '导航',
       enType: 'Navigation',
       name: 'DropDown',
@@ -276,9 +276,9 @@ export const routesConfig = [
   {
     path: 'editable-select',
     component: ExamplePanelComponent,
-
-
-    meta: {
+    loadChildren: () =>
+      import('../../../devui/editable-select/demo/editable-select-demo.module').then((m) => m.EditableSelectDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'EditableSelect',
@@ -288,8 +288,8 @@ export const routesConfig = [
   {
     path: 'loading',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/loading/demo/loading-demo.module').then((m) => m.LoadingDemoModule),
+    data: {
       type: '反馈',
       enType: 'Feedback',
       name: 'Loading',
@@ -299,8 +299,8 @@ export const routesConfig = [
   {
     path: 'modal',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/modal/demo/modal-demo.module').then((m) => m.ModalDemoModule),
+    data: {
       type: '反馈',
       enType: 'Feedback',
       name: 'Modal',
@@ -310,8 +310,8 @@ export const routesConfig = [
   {
     path: 'pagination',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/pagination/demo/pagination-demo.module').then((m) => m.PaginationDemoModule),
+    data: {
       type: '导航',
       enType: 'Navigation',
       name: 'Pagination',
@@ -321,8 +321,8 @@ export const routesConfig = [
   {
     path: 'panel',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/panel/demo/panel-demo.module').then((m) => m.PanelDemoModule),
+    data: {
       name: 'Panel',
       cnName: '面板',
     },
@@ -330,8 +330,8 @@ export const routesConfig = [
   {
     path: 'popover',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/popover/demo/popover-demo.module').then((m) => m.PopoverDemoModule),
+    data: {
       type: '反馈',
       enType: 'Feedback',
       name: 'Popover',
@@ -341,8 +341,8 @@ export const routesConfig = [
   {
     path: 'progress',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/progress/demo/progress-demo.module').then((m) => m.ProgressDemoModule),
+    data: {
       type: '数据展示',
       enType: 'Data Display',
       name: 'Progress',
@@ -352,9 +352,9 @@ export const routesConfig = [
   {
     path: 'quadrant-diagram',
     component: ExamplePanelComponent,
-
-
-    meta: {
+    loadChildren: () =>
+      import('../../../devui/quadrant-diagram/demo/quadrant-diagram-demo.module').then((m) => m.QuadrantDiagramDemoModule),
+    data: {
       type: '数据展示',
       enType: 'Data Display',
       name: 'Quadrant Diagram',
@@ -364,8 +364,8 @@ export const routesConfig = [
   {
     path: 'radio',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/radio/demo/radio-demo.module').then((m) => m.RadioDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'Radio',
@@ -375,8 +375,8 @@ export const routesConfig = [
   {
     path: 'rate',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/rate/demo/rate-demo.module').then((m) => m.RateDemoModule),
+    data: {
       type: '数据展示',
       enType: 'Data Display',
       name: 'Rate',
@@ -386,8 +386,8 @@ export const routesConfig = [
   {
     path: 'search',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/search/demo/search-demo.module').then((m) => m.SearchDemoModule),
+    data: {
       name: 'Search',
       cnName: '搜索框',
     },
@@ -395,8 +395,8 @@ export const routesConfig = [
   {
     path: 'select',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/select/demo/select-demo.module').then((m) => m.SelectDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'Select',
@@ -406,8 +406,8 @@ export const routesConfig = [
   {
     path: 'cascader',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/cascader/demo/cascader-demo.module').then((m) => m.CascaderDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'Cascader',
@@ -417,8 +417,8 @@ export const routesConfig = [
   {
     path: 'status',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/status/demo/status-demo.module').then((m) => m.StatusDemoModule),
+    data: {
       name: 'Status',
       cnName: '状态',
     },
@@ -426,8 +426,8 @@ export const routesConfig = [
   {
     path: 'sticky',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/sticky/demo/sticky-demo.module').then((m) => m.StickyDemoModule),
+    data: {
       name: 'Sticky',
       cnName: '便贴',
     },
@@ -435,8 +435,8 @@ export const routesConfig = [
   {
     path: 'tabs',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/tabs/demo/tabs-demo.module').then((m) => m.TabsDemoModule),
+    data: {
       type: '导航',
       enType: 'Navigation',
       name: 'Tabs',
@@ -446,8 +446,8 @@ export const routesConfig = [
   {
     path: 'tags',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/tags/demo/tags-demo.module').then((m) => m.TagsDemoModule),
+    data: {
       type: '数据展示',
       enType: 'Data Display',
       name: 'Tags',
@@ -457,8 +457,8 @@ export const routesConfig = [
   {
     path: 'tags-input',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/tags-input/demo/tags.input-demo.module').then((m) => m.TagsInputDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'TagsInput',
@@ -468,8 +468,8 @@ export const routesConfig = [
   {
     path: 'time-axis',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/time-axis/demo/time-axis-demo.module').then((m) => m.TimeAxisDemoModule),
+    data: {
       type: '数据展示',
       enType: 'Data Display',
       name: 'TimeAxis',
@@ -479,8 +479,8 @@ export const routesConfig = [
   {
     path: 'toast',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/toast/demo/toast-demo.module').then((m) => m.ToastDemoModule),
+    data: {
       type: '反馈',
       enType: 'Feedback',
       name: 'Toast',
@@ -490,8 +490,8 @@ export const routesConfig = [
   {
     path: 'tooltip',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/tooltip/demo/tooltip-demo.module').then((m) => m.TooltipDemoModule),
+    data: {
       type: '反馈',
       enType: 'Feedback',
       name: 'Tooltip',
@@ -501,8 +501,8 @@ export const routesConfig = [
   {
     path: 'read-tip',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/read-tip/demo/read-tip-demo.module').then((m) => m.ReadTipDemoModule),
+    data: {
       type: '反馈',
       enType: 'Feedback',
       name: 'ReadTip',
@@ -514,8 +514,8 @@ export const routesConfig = [
   {
     path: 'toggle',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/toggle/demo/toggle-demo.module').then((m) => m.ToggleDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'Toggle',
@@ -525,8 +525,8 @@ export const routesConfig = [
   {
     path: 'tree',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/tree/demo/tree-demo.module').then((m) => m.TreeDemoModule),
+    data: {
       type: '数据展示',
       enType: 'Data Display',
       name: 'Tree',
@@ -536,8 +536,8 @@ export const routesConfig = [
   {
     path: 'upload',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/upload/demo/upload-demo.module').then((m) => m.UploadDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'Upload',
@@ -547,8 +547,8 @@ export const routesConfig = [
   {
     path: 'input-number',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/input-number/demo/input-number-demo.module').then((m) => m.InputNumberDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'InputNumber',
@@ -558,8 +558,8 @@ export const routesConfig = [
   {
     path: 'tree-select',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/tree-select/demo/tree-select-demo.module').then((m) => m.TreeSelectDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'TreeSelect',
@@ -569,8 +569,8 @@ export const routesConfig = [
   {
     path: 'slider',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/slider/demo/slider-demo.module').then((m) => m.SliderDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'Slider',
@@ -580,8 +580,8 @@ export const routesConfig = [
   {
     path: 'splitter',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/splitter/demo/splitter-demo.module').then((m) => m.SplitterDemoModule),
+    data: {
       type: '布局',
       enType: 'Layout',
       name: 'Splitter',
@@ -591,8 +591,8 @@ export const routesConfig = [
   {
     path: 'layout',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/layout/demo/layout-demo.module').then((m) => m.LayoutDemoModule),
+    data: {
       type: '布局',
       enType: 'Layout',
       name: 'Layout',
@@ -602,8 +602,8 @@ export const routesConfig = [
   {
     path: 'gantt',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/gantt/demo/gantt-demo.module').then((m) => m.GanttDemoModule),
+    data: {
       type: '数据展示',
       enType: 'Data Display',
       name: 'Gantt',
@@ -613,8 +613,8 @@ export const routesConfig = [
   {
     path: 'text-input',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/text-input/demo/text-input-demo.module').then((m) => m.TextInputDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'TextInput',
@@ -624,8 +624,8 @@ export const routesConfig = [
   {
     path: 'textarea',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/textarea/demo/text-demo.module').then((m) => m.TextDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'Textarea',
@@ -635,8 +635,8 @@ export const routesConfig = [
   {
     path: 'steps-guide',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/steps-guide/demo/steps-guide-demo.module').then((m) => m.StepsGuideDemoModule),
+    data: {
       type: '导航',
       enType: 'Navigation',
       name: 'StepsGuide',
@@ -646,8 +646,8 @@ export const routesConfig = [
   {
     path: 'time-picker',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/time-picker/demo/time-picker-demo.module').then((m) => m.TimePickerDemoModule),
+    data: {
       type: '数据录入',
       enType: 'Data Entry',
       name: 'TimePicker',
@@ -657,8 +657,8 @@ export const routesConfig = [
   {
     path: 'relative-time',
     component: ExamplePanelComponent,
-
-    meta: {
+    loadChildren: () => import('../../../devui/relative-time/demo/demo.module').then((m) => m.DemoModule),
+    data: {
       type: '数据展示',
       enType: 'Data Display',
       name: 'RelativeTime',
@@ -666,5 +666,3 @@ export const routesConfig = [
     },
   },
 ];
-
-export default routesConfig;
