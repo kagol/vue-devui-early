@@ -23,9 +23,9 @@
 </template>
 
 <script>
-import ButtonDemo from '../../devui/button/demo/button-demo.vue'
-import Tabs from '../../devui/tabs/tabs.vue'
-import Tab from '../../devui/tabs/tab.vue'
+import ButtonDemo from '../../devui/button/demo/button-demo'
+import Tabs from '../../devui/tabs/tabs'
+import Tab from '../../devui/tabs/tab'
 
 export default {
   name: 'app-demo-cell',

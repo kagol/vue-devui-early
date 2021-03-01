@@ -1,12 +1,12 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'd-dragdrop',
+  name: 'd-tags-input',
   props: {
   },
   setup(props, ctx) {
     return () => {
-      return <div>devui-dragdrop</div>
+      return <div>devui-tags-input</div>
     }
   }
 })
