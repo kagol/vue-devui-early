@@ -16,7 +16,7 @@
     <div class="examples-viewer">
       <div class="examples-viewer-wrapper">
         <!-- TODO: Demo列表 -->
-        <d-button-demo></d-button-demo>
+        <router-view></router-view>
       </div>
     </div>
   </div>

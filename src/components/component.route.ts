@@ -3,6 +3,69 @@ import GetStartedComponent from './app-demo-cell.vue';
 import ColorComponent from './app-demo-cell.vue';
 import ThemeGuideComponent from './app-demo-cell.vue';
 
+import accordionRoutes from '../../devui/accordion/demo/accordion.route'
+import alertRoutes from '../../devui/alert/demo/alert.route'
+import anchorRoutes from '../../devui/anchor/demo/anchor.route'
+import autoCompleteRoutes from '../../devui/auto-complete/demo/auto-complete.route'
+import avatarRoutes from '../../devui/avatar/demo/avatar.route'
+import backTopRoutes from '../../devui/back-top/demo/back-top.route'
+import badgeRoutes from '../../devui/badge/demo/badge.route'
+import breadcrumbRoutes from '../../devui/breadcrumb/demo/breadcrumb.route'
+import buttonRoutes from '../../devui/button/demo/button.route'
+import cardRoutes from '../../devui/card/demo/card.route'
+
+import carouselRoutes from '../../devui/carousel/demo/carousel.route'
+import cascaderRoutes from '../../devui/cascader/demo/cascader.route'
+import checkboxRoutes from '../../devui/checkbox/demo/checkbox.route'
+import dataTableRoutes from '../../devui/data-table/demo/data-table.route'
+import datepickerRoutes from '../../devui/datepicker/demo/datepicker.route'
+import dragdropRoutes from '../../devui/dragdrop/demo/dragdrop.route'
+import drawerRoutes from '../../devui/drawer/demo/drawer.route'
+import dropdownRoutes from '../../devui/dropdown/demo/dropdown.route'
+import editableSelectRoutes from '../../devui/editable-select/demo/editable-select.route'
+import formRoutes from '../../devui/form/demo/form.route'
+
+import fullscreenRoutes from '../../devui/fullscreen/demo/fullscreen.route'
+import ganttRoutes from '../../devui/gantt/demo/gantt.route'
+import imagePreviewRoutes from '../../devui/image-preview/demo/image-preview.route'
+import inputNumberRoutes from '../../devui/input-number/demo/input-number.route'
+import layoutRoutes from '../../devui/layout/demo/layout.route'
+import loadingRoutes from '../../devui/loading/demo/loading.route'
+import modalRoutes from '../../devui/modal/demo/modal.route'
+import multiAutoCompleteRoutes from '../../devui/multi-auto-complete/demo/multi-auto-complete.route'
+import paginationRoutes from '../../devui/pagination/demo/pagination.route'
+import panelRoutes from '../../devui/panel/demo/panel.route'
+
+import popoverRoutes from '../../devui/popover/demo/popover.route'
+import progressRoutes from '../../devui/progress/demo/progress.route'
+import quadrantDiagramRoutes from '../../devui/quadrant-diagram/demo/quadrant-diagram.route'
+import radioRoutes from '../../devui/radio/demo/radio.route'
+import rateRoutes from '../../devui/rate/demo/rate.route'
+import readTipRoutes from '../../devui/read-tip/demo/read-tip.route'
+import searchRoutes from '../../devui/search/demo/search.route'
+import selectRoutes from '../../devui/select/demo/select.route'
+import sliderRoutes from '../../devui/slider/demo/slider.route'
+import splitterRoutes from '../../devui/splitter/demo/splitter.route'
+
+import statusRoutes from '../../devui/status/demo/status.route'
+import stepsGuideRoutes from '../../devui/steps-guide/demo/steps-guide.route'
+import stickyRoutes from '../../devui/sticky/demo/sticky.route'
+import tabsRoutes from '../../devui/tabs/demo/tabs.route'
+import tagsRoutes from '../../devui/tags/demo/tags.route'
+import tagsInputRoutes from '../../devui/tags-input/demo/tags-input.route'
+import textInputRoutes from '../../devui/text-input/demo/text-input.route'
+import textareaRoutes from '../../devui/textarea/demo/textarea.route'
+import timeAxisRoutes from '../../devui/time-axis/demo/time-axis.route'
+import timePickerRoutes from '../../devui/time-picker/demo/time-picker.route'
+
+import toastRoutes from '../../devui/toast/demo/toast.route'
+import toggleRoutes from '../../devui/toggle/demo/toggle.route'
+import tooltipRoutes from '../../devui/tooltip/demo/tooltip.route'
+import transferRoutes from '../../devui/transfer/demo/transfer.route'
+import treeRoutes from '../../devui/tree/demo/tree.route'
+import treeSelectRoutes from '../../devui/tree-select/demo/tree-select.route'
+import uploadRoutes from '../../devui/upload/demo/upload.route'
+
 export const routesConfig = [
   {
     path: '',
@@ -28,7 +91,7 @@ export const routesConfig = [
   {
     path: 'accordion',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '导航',
       enType: 'Navigation',
@@ -39,7 +102,7 @@ export const routesConfig = [
   {
     path: 'alert',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '反馈',
       enType: 'Feedback',
@@ -50,7 +113,7 @@ export const routesConfig = [
   {
     path: 'anchor',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '导航',
       enType: 'Navigation',
@@ -61,8 +124,7 @@ export const routesConfig = [
   {
     path: 'auto-complete',
     component: ExamplePanelComponent,
-
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -73,7 +135,7 @@ export const routesConfig = [
   {
     path: 'avatar',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据展示',
       enType: 'Data Display',
@@ -84,8 +146,7 @@ export const routesConfig = [
   {
     path: 'ImagePreview',
     component: ExamplePanelComponent,
-
-
+    children: accordionRoutes,
     meta: {
       type: '数据展示',
       enType: 'Data Display',
@@ -96,7 +157,7 @@ export const routesConfig = [
   {
     path: 'breadcrumb',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '导航',
       enType: 'Navigation',
@@ -107,7 +168,7 @@ export const routesConfig = [
   {
     path: 'back-top',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '导航',
       enType: 'Navigation',
@@ -118,7 +179,7 @@ export const routesConfig = [
   {
     path: 'button',
     component: ExamplePanelComponent,
-
+    children: buttonRoutes,
     meta: {
       name: 'Button',
       cnName: '按钮',
@@ -127,7 +188,7 @@ export const routesConfig = [
   {
     path: 'badge',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据展示',
       enType: 'Data Display',
@@ -138,7 +199,7 @@ export const routesConfig = [
   {
     path: 'card',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据展示',
       enType: 'Data Display',
@@ -149,7 +210,7 @@ export const routesConfig = [
   {
     path: 'carousel',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据展示',
       enType: 'Data Display',
@@ -160,7 +221,7 @@ export const routesConfig = [
   {
     path: 'checkbox',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -171,7 +232,7 @@ export const routesConfig = [
   {
     path: 'common',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       name: 'Common',
       cnName: '公共方法',
@@ -180,7 +241,7 @@ export const routesConfig = [
   {
     path: 'datatable',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据展示',
       enType: 'Data Display',
@@ -191,7 +252,7 @@ export const routesConfig = [
   {
     path: 'datepicker',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -202,8 +263,7 @@ export const routesConfig = [
   {
     path: 'multi-auto-complete',
     component: ExamplePanelComponent,
-
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -214,7 +274,7 @@ export const routesConfig = [
   {
     path: 'form',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -225,7 +285,7 @@ export const routesConfig = [
   {
     path: 'fullscreen',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       name: 'Fullscreen',
       cnName: '全屏',
@@ -234,7 +294,7 @@ export const routesConfig = [
   {
     path: 'transfer',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -245,7 +305,7 @@ export const routesConfig = [
   {
     path: 'dragdrop',
     component: ExamplePanelComponent,
-
+    children: dragdropRoutes,
     meta: {
       name: 'DragDrop',
       cnName: '拖拽',
@@ -254,7 +314,7 @@ export const routesConfig = [
   {
     path: 'drawer',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '反馈',
       enType: 'Feedback',
@@ -265,7 +325,7 @@ export const routesConfig = [
   {
     path: 'dropdown',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '导航',
       enType: 'Navigation',
@@ -276,8 +336,7 @@ export const routesConfig = [
   {
     path: 'editable-select',
     component: ExamplePanelComponent,
-
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -288,7 +347,7 @@ export const routesConfig = [
   {
     path: 'loading',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '反馈',
       enType: 'Feedback',
@@ -299,7 +358,7 @@ export const routesConfig = [
   {
     path: 'modal',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '反馈',
       enType: 'Feedback',
@@ -310,7 +369,7 @@ export const routesConfig = [
   {
     path: 'pagination',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '导航',
       enType: 'Navigation',
@@ -321,7 +380,7 @@ export const routesConfig = [
   {
     path: 'panel',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       name: 'Panel',
       cnName: '面板',
@@ -330,7 +389,7 @@ export const routesConfig = [
   {
     path: 'popover',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '反馈',
       enType: 'Feedback',
@@ -341,7 +400,7 @@ export const routesConfig = [
   {
     path: 'progress',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据展示',
       enType: 'Data Display',
@@ -352,8 +411,7 @@ export const routesConfig = [
   {
     path: 'quadrant-diagram',
     component: ExamplePanelComponent,
-
-
+    children: accordionRoutes,
     meta: {
       type: '数据展示',
       enType: 'Data Display',
@@ -364,7 +422,7 @@ export const routesConfig = [
   {
     path: 'radio',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -375,7 +433,7 @@ export const routesConfig = [
   {
     path: 'rate',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据展示',
       enType: 'Data Display',
@@ -386,7 +444,7 @@ export const routesConfig = [
   {
     path: 'search',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       name: 'Search',
       cnName: '搜索框',
@@ -395,7 +453,7 @@ export const routesConfig = [
   {
     path: 'select',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -406,7 +464,7 @@ export const routesConfig = [
   {
     path: 'cascader',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -417,7 +475,7 @@ export const routesConfig = [
   {
     path: 'status',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       name: 'Status',
       cnName: '状态',
@@ -426,7 +484,7 @@ export const routesConfig = [
   {
     path: 'sticky',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       name: 'Sticky',
       cnName: '便贴',
@@ -435,7 +493,7 @@ export const routesConfig = [
   {
     path: 'tabs',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '导航',
       enType: 'Navigation',
@@ -446,7 +504,7 @@ export const routesConfig = [
   {
     path: 'tags',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据展示',
       enType: 'Data Display',
@@ -457,7 +515,7 @@ export const routesConfig = [
   {
     path: 'tags-input',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -468,7 +526,7 @@ export const routesConfig = [
   {
     path: 'time-axis',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据展示',
       enType: 'Data Display',
@@ -479,7 +537,7 @@ export const routesConfig = [
   {
     path: 'toast',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '反馈',
       enType: 'Feedback',
@@ -490,7 +548,7 @@ export const routesConfig = [
   {
     path: 'tooltip',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '反馈',
       enType: 'Feedback',
@@ -501,7 +559,7 @@ export const routesConfig = [
   {
     path: 'read-tip',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '反馈',
       enType: 'Feedback',
@@ -514,7 +572,7 @@ export const routesConfig = [
   {
     path: 'toggle',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -525,7 +583,7 @@ export const routesConfig = [
   {
     path: 'tree',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据展示',
       enType: 'Data Display',
@@ -536,7 +594,7 @@ export const routesConfig = [
   {
     path: 'upload',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -547,7 +605,7 @@ export const routesConfig = [
   {
     path: 'input-number',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -558,7 +616,7 @@ export const routesConfig = [
   {
     path: 'tree-select',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -569,7 +627,7 @@ export const routesConfig = [
   {
     path: 'slider',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -580,7 +638,7 @@ export const routesConfig = [
   {
     path: 'splitter',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '布局',
       enType: 'Layout',
@@ -591,7 +649,7 @@ export const routesConfig = [
   {
     path: 'layout',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '布局',
       enType: 'Layout',
@@ -602,7 +660,7 @@ export const routesConfig = [
   {
     path: 'gantt',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据展示',
       enType: 'Data Display',
@@ -613,7 +671,7 @@ export const routesConfig = [
   {
     path: 'text-input',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -624,7 +682,7 @@ export const routesConfig = [
   {
     path: 'textarea',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -635,7 +693,7 @@ export const routesConfig = [
   {
     path: 'steps-guide',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '导航',
       enType: 'Navigation',
@@ -646,7 +704,7 @@ export const routesConfig = [
   {
     path: 'time-picker',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据录入',
       enType: 'Data Entry',
@@ -657,7 +715,7 @@ export const routesConfig = [
   {
     path: 'relative-time',
     component: ExamplePanelComponent,
-
+    children: accordionRoutes,
     meta: {
       type: '数据展示',
       enType: 'Data Display',
