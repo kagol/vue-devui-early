@@ -1,4 +1,4 @@
-import ButtonDemoComponent from './button-demo.vue'
+import ButtonDemoComponent from './button-demo'
 import DevUIApiComponent from '../../shared/devui-api/devui-api'
 
 const routes = [

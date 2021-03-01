@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import ButtonDemo from '../../devui/button/demo/button-demo.vue'
+import ButtonDemo from '../../devui/button/demo/button-demo'
 import Tabs from '../../devui/tabs/tabs'
 import Tab from '../../devui/tabs/tab'
 
