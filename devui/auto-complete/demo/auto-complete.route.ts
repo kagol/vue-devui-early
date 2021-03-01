@@ -1,9 +1,9 @@
-import DragDropDemoComponent from './dragdrop-demo'
+import AutoCompleteDemoComponent from './auto-complete-demo'
 import DevUIApiComponent from '../../shared/devui-api/devui-api'
 
 const routes = [
   { path: '',  redirectTo: 'demo' },
-  { path: 'demo', component: DragDropDemoComponent},
+  { path: 'demo', component: AutoCompleteDemoComponent},
   { path: 'api', component: DevUIApiComponent, meta: {
     'zh-cn': '../doc/api-cn.md',
     'en-us': '../doc/api-en.md'

@@ -1,12 +1,12 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'd-dragdrop-demo',
+  name: 'd-sticky-demo',
   props: {
   },
   setup(props, ctx) {
     return () => {
-      return <div>devui-dragdrop-demo</div>
+      return <div>devui-sticky-demo</div>
     }
   }
 })
