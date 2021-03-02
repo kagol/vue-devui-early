@@ -21,6 +21,44 @@ Tips: 该项目目前还处于孵化和演进阶段，欢迎大家一起参与�
 
 <img width="600" alt="devui-top30" src="https://user-images.githubusercontent.com/9566362/109677915-1534a200-7bb5-11eb-869d-912d6e1a5fa6.png">
 
+## 组件责任田（请根据自己的时间和兴趣认领）
+
+1. accordion - [kagol](https://github.com/kagol)
+1. alert
+1. anchor
+1. auto-complete
+1. avatar
+1. back-top
+1. badge
+1. breadcrumb
+1. button - [Zcating](https://github.com/Zcating)
+1. card
+
+1. carousel
+1. cascader
+1. checkbox
+1. data-table
+1. datepicker
+1. dragdrop
+1. drawer
+1. dropdown
+1. editable-select
+1. form
+
+
+1. fullscreen
+1. gantt
+1. image-preview
+1. input-number
+1. layout
+1. loading
+1. modal
+1. multi-auto-complete
+1. pagination
+1. panel
+
+1. tabs - 星辰大海
+
 ## 1 安装依赖
 
 ```
