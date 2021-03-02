@@ -19,7 +19,7 @@ Tips: 该项目目前还处于孵化和演进阶段，欢迎大家一起参与�
 
 ## 组件代码量
 
-![DevUI Top 30](https://user-images.githubusercontent.com/9566362/109676602-d3572c00-7bb3-11eb-916d-3ef88b72deaa.png)
+<img width="600" alt="devui-top30" src="https://user-images.githubusercontent.com/9566362/109677915-1534a200-7bb5-11eb-869d-912d6e1a5fa6.png">
 
 ## 1 安装依赖
 
