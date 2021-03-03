@@ -15,7 +15,7 @@ Tips: 该项目目前还处于孵化和演进阶段，欢迎大家一起参与�
 |移植 d-codebox 组件    |展示 Demo 中的示例代码                |[to0simple](https://github.com/to0simple)|
 |移植 d-button 组件     |该组件将成为第一个成功移植过程的 Vue 组件|[Zcating](https://github.com/Zcating)|
 |编写 Button 组件的 Demo|显示组件的 Demo                      |待认领|
-|集成 API 文档          |显示组件的 API                       |待认领|
+|集成 API 文档          |显示组件的 API                       |[kagol](https://github.com/kagol)|
 
 ## 组件代码量
 
