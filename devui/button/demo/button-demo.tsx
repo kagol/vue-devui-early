@@ -6,9 +6,8 @@ import ButtonCommon from './common/common'
 export default defineComponent({
   name: 'd-button-demo',
   setup() {
-    const primarySource = {};
-    const commonSource = {};
-
+    const primarySource: any[] = [];
+    const commonSource: any[] = [];
     return () => {
       return <div class="demo-container">
       <div class="demo-example">

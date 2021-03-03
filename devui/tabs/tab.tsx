@@ -6,7 +6,7 @@ export default defineComponent({
   },
   setup(props, ctx) {
     return () => {
-      return <div>devui-tab</div>
+      return <div>devui-tab{ctx.slots.default?.()}</div>
     }
   }
 })
