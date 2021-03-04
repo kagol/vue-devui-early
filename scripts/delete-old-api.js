@@ -19,7 +19,6 @@ function deleteOldApi(targetPath) {
 
       // 在组件目录下创建 doc 目录
       if (fs.existsSync(targetApiPath)) {
-        console.log('targetApiPath:', targetApiPath)
         shelljs.rm('-rf', targetApiPath);
       }
     })

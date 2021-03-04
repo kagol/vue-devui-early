@@ -50,7 +50,6 @@ function addApi(sourcePath, targetPath) {
 
       // 修改路由
       const componentRoutePath = path.resolve(targetPath, componentName, 'demo', componentName + '.route.ts')
-      console.log('componentRoutePath:', componentRoutePath);
       shelljs.sed('-i', /'..\/doc\/api-cn.md'/, 'ApiCn', componentRoutePath)
       shelljs.sed('-i', /'..\/doc\/api-en.md'/, 'ApiEn', componentRoutePath)
       shelljs.sed(
