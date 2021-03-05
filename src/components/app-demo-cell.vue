@@ -5,21 +5,39 @@
       <div style="margin-bottom: 40px;">{{ data.description }}</div>
       <div v-if="data.tmw">
         <h3>何时使用</h3>
-        <div style="margin-bottom: 20px;">{{ data.tmw }}</div>
+        <div style="margin-bottom: 20px;" v-html="data.tmw"></div>
       </div>
       <!-- TODO: d-tabs -->
+      <d-tabs :showContent="false" :activeTab="componentTab" @activeTabChange="activeTabChange($event)">
+        <d-tab id="demo" title="Demo" tabId="demo">
+          <router-link to="demo">Demo</router-link>
+        </d-tab>
+        <d-tab id="api" title="API" tabId="api">
+          <router-link to="api">API</router-link>
+        </d-tab>
+      </d-tabs>
     </div>
     <div class="examples-viewer">
       <div class="examples-viewer-wrapper">
         <!-- TODO: Demo列表 -->
+        <router-view></router-view>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import ButtonDemo from '../../devui/button/demo/button-demo'
+import Tabs from '../../devui/tabs/tabs'
+import Tab from '../../devui/tabs/tab'
+
 export default {
   name: 'app-demo-cell',
+  components: {
+    'd-button-demo': ButtonDemo,
+    'd-tabs': Tabs,
+    'd-tab': Tab,
+  },
   data() {
     return {
       data: {},

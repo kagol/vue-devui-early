@@ -23,12 +23,7 @@
       </ul>
       <nav class="side-nav">
         <!-- TODO: 左侧组件导航 d-accordion -->
-        <div v-for="category in componentsData" v-bind:key="category">
-          {{ category.title }}
-          <div v-for="component in category.children" v-bind:key="component">
-            <router-link :to="component.link">{{ component.title }}</router-link>
-          </div>
-        </div>
+        <d-accordion :data="componentsData" :linkType="'routerLink'"></d-accordion>
       </nav>
     </div>
     <div class="doc-viewer-container">
@@ -43,11 +38,13 @@
 import { groupBy, map } from 'lodash-es'
 import { routesConfig } from './component.route'
 import AppDemoCell from './app-demo-cell.vue'
+import Accordion from '../../devui/accordion/accordion'
 
 export default {
   name: 'app-content',
   components: {
     AppDemoCell,
+    'd-accordion': Accordion
   },
   data(): any {
     return {
@@ -81,7 +78,7 @@ export default {
             if (item.meta.name) {
               return {
                 title: item.meta.name + ' ' + item.meta.cnName,
-                link: item.path,
+                link: '/components/' + item.path + '/demo',
               };
             } else {
               return {};
