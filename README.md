@@ -6,6 +6,14 @@ DevUI官方网站：[https://devui.design](https://devui.design)
 
 Tips: 该项目目前还处于孵化和演进阶段，欢迎大家一起参与建设🤝
 
+目前，组件移植的基本流程已经打通，欢迎大家参与到 Vue DevUI 项目的建设中来！👏🎉
+
+通过参与 Vue DevUI 项目，你可以：
+- 学习最新的 Vite+Vue3+TSX 技术
+- 学习如何设计和开发组件
+- 参与到开源社区中来
+- 结识一群热爱学习、热爱开源的朋友
+
 ## 任务安排
 
 |任务名                 |作用                               |责任人|进度|
@@ -18,48 +26,6 @@ Tips: 该项目目前还处于孵化和演进阶段，欢迎大家一起参与�
 |编写 Button 组件的 Demo|显示组件的 Demo                      |待认领|0%|
 |集成 API 文档          |显示组件的 API                       |[kagol](https://github.com/kagol)|50%|
 |组件库打包             |打包并发布到npm                       |待认领|0%|
-
-## 组件代码量
-
-<img width="600" alt="devui-top30" src="https://user-images.githubusercontent.com/9566362/109677915-1534a200-7bb5-11eb-869d-912d6e1a5fa6.png">
-
-## 组件责任田（请根据自己的时间和兴趣认领）
-
-1. accordion - [kagol](https://github.com/kagol)
-1. alert
-1. anchor
-1. auto-complete
-1. avatar
-1. back-top
-1. badge
-1. breadcrumb
-1. button - [Zcating](https://github.com/Zcating)
-1. card
-
-1. carousel
-1. cascader
-1. checkbox
-1. data-table
-1. datepicker
-1. dragdrop
-1. drawer
-1. dropdown
-1. editable-select
-1. form
-
-
-1. fullscreen
-1. gantt
-1. image-preview
-1. input-number
-1. layout
-1. loading
-1. modal
-1. multi-auto-complete
-1. pagination
-1. panel
-
-1. tabs - 星辰大海
 
 ## 1 安装依赖
 
