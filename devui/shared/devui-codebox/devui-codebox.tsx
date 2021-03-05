@@ -86,7 +86,7 @@ export default defineComponent({
                             { !_copied.value ? <CopyIcon></CopyIcon> : <CopiedIcon></CopiedIcon>}
                           </span>
                         </div>
-                        <DevuiHighlight></DevuiHighlight>
+                        <DevuiHighlight code={item.code.default || item.code} language={item.language}></DevuiHighlight>
                       </div>
                     </DevuiTab>
                   )
