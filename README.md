@@ -8,14 +8,16 @@ Tips: 该项目目前还处于孵化和演进阶段，欢迎大家一起参与�
 
 ## 任务安排
 
-|任务名                 |作用                               |责任人|
-|--                    |--                                 |--|
-|移植 d-accordion 组件  |显示左侧组件导航                      |[kagol](https://github.com/kagol)|
-|移植 d-tabs 组件       |让 Demo/API 的展示分开               |星辰大海|
-|移植 d-codebox 组件    |展示 Demo 中的示例代码                |QZL|
-|移植 d-button 组件     |该组件将成为第一个成功移植过程的 Vue 组件|[Zcating](https://github.com/Zcating)|
-|编写 Button 组件的 Demo|显示组件的 Demo                      |待认领|
-|集成 API 文档          |显示组件的 API                       |待认领|
+|任务名                 |作用                               |责任人|进度|
+|--                    |--                                 |--|--|
+|移植 d-accordion 组件  |显示左侧组件导航                      |[kagol](https://github.com/kagol)|50%|
+|移植 d-tabs 组件       |让 Demo/API 的展示分开               |星辰大海|0%|
+|移植 d-codebox 组件    |展示 Demo 中的示例代码                |[to0simple](https://github.com/to0simple)|50%|
+|移植 d-highlight 组件  |代码高亮                             |[to0simple](https://github.com/to0simple)|0%|
+|移植 d-button 组件     |该组件将成为第一个成功移植过程的 Vue 组件|[Zcating](https://github.com/Zcating)|50%|
+|编写 Button 组件的 Demo|显示组件的 Demo                      |待认领|0%|
+|集成 API 文档          |显示组件的 API                       |[kagol](https://github.com/kagol)|50%|
+|组件库打包             |打包并发布到npm                       |待认领|0%|
 
 ## 组件代码量
 

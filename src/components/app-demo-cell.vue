@@ -9,8 +9,12 @@
       </div>
       <!-- TODO: d-tabs -->
       <d-tabs :showContent="false" :activeTab="componentTab" @activeTabChange="activeTabChange($event)">
-        <d-tab id="demo" title="Demo" tabId="demo"></d-tab>
-        <d-tab id="api" title="API" tabId="api"></d-tab>
+        <d-tab id="demo" title="Demo" tabId="demo">
+          <router-link to="demo">Demo</router-link>
+        </d-tab>
+        <d-tab id="api" title="API" tabId="api">
+          <router-link to="api">API</router-link>
+        </d-tab>
       </d-tabs>
     </div>
     <div class="examples-viewer">
