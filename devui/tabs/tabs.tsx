@@ -17,6 +17,7 @@ export default defineComponent({
       type: [String, Number],
       default: null
     },
+    // TODO:其中 slider 类型还没有实现
     type: {
       type: String as () => TabsType,
       default: 'tabs'
@@ -40,6 +41,7 @@ export default defineComponent({
       type: String
     }
   },
+  // TODO: beforeChange没有完成实现
   emits: ['update:modelValue', 'activeTabChange', 'beforeChange'],
   setup(props, { emit, slots }) {
     const active = computed(() => {
