@@ -17,18 +17,40 @@ Tips: 该项目目前还处于孵化和演进阶段，欢迎大家一起参与�
 以下是项目进展和规划：
 [项目进展和规划](https://github.com/kagol/vue-devui/wiki/%E9%A1%B9%E7%9B%AE%E8%BF%9B%E5%B1%95%E5%92%8C%E8%A7%84%E5%88%92)
 
-## 任务安排
+# 贡献者花名册
 
-|任务名                 |作用                               |责任人|进度|
-|--                    |--                                 |--|--|
-|移植 d-accordion 组件  |显示左侧组件导航                      |[kagol](https://github.com/kagol)|50%|
-|移植 d-tabs 组件       |让 Demo/API 的展示分开               |[flxy1028](https://github.com/flxy1028)|80%|
-|移植 d-codebox 组件    |展示 Demo 中的示例代码                |[to0simple](https://github.com/to0simple)|50%|
-|移植 d-highlight 组件  |代码高亮                             |[to0simple](https://github.com/to0simple)|0%|
-|移植 d-button 组件     |该组件将成为第一个成功移植过程的 Vue 组件|[Zcating](https://github.com/Zcating)|50%|
-|编写 Button 组件的 Demo|显示组件的 Demo                      |[Zcating](https://github.com/Zcating)|0%|
-|集成 API 文档          |显示组件的 API                       |[kagol](https://github.com/kagol)|50%|
-|组件库打包             |打包并发布到npm                       |待认领|0%|
+排名不分先后（按首字母排序）
+
+## flxy1028
+
+[flxy1028](https://github.com/flxy1028)
+
+目前负责的责任田有：
+- Tabs
+
+## kagol
+
+[kagol](https://github.com/kagol)
+
+目前负责的责任田有：
+- Accordion
+
+## to0simple
+
+[to0simple](https://github.com/to0simple)
+
+目前负责的责任田有：
+- Codebox
+- Highlight
+
+## Zcating
+
+[Zcating](https://github.com/Zcating)
+
+目前负责的责任田有：
+- Button
+
+# 快速开始
 
 ## 1 安装依赖
 
