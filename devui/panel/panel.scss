@@ -118,20 +118,15 @@
             }
         }
     }
-    
-    .devui-panel-body-closing {
-        height: 0 !important;
-        transition: height .3s ease-in-out;
-    }
 
     .devui-panel-leave-active {
-        transition: height .3s ease-in-out;
+        transition: all .3s ease-in-out;
         animation: panelUpOut .3s ease-in-out;
         animation-fill-mode: both;
     }
     
     .devui-panel-enter-active {
-        transition: height .3s ease-in-out;
+        transition: all .3s ease-in-out;
         animation: panelUpIn .3s ease-in-out;
         animation-fill-mode: both;
     }

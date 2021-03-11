@@ -62,13 +62,18 @@ export default defineComponent({
       }
     })
 
-    const enter = (el: any) => {
+    const enter = (element: Element ) => {
+      const el = (element as HTMLElement);
       el.style.height = '';
       const height = el.offsetHeight;
-      el.style.height = 0;
+      el.style.height = '0px';
       // 需要执行一次才会生效
       el.offsetHeight;
       el.style.height = `${height}px`;
+    }
+    const leave = (element: Element) => {
+      const el = (element as HTMLElement);
+      el.style.height = '0px';
     }
     
     return () => {
@@ -84,21 +89,15 @@ export default defineComponent({
         </div> : null);
 
       return (
-        
         <div class={`devui-panel devui-panel-${props.type} ${props.cssClass}`}>
           {headerContent}
-          <Transition name="devui-panel" onEnter={ enter }>
-            {/* {isCollapsed.value === undefined || isCollapsed.value ?
-            <div ref={bodyEl} class={`devui-panel-body ${isCollapsed.value !== undefined ? 'devui-panel-body-collapse': null} ${(isCollapsed.value === undefined || isCollapsed.value) ? 'devui-panel-body-open' : 'devui-panel-body-closing'}`}>
+          <Transition name="devui-panel" onEnter={ enter } onLeave={leave}>
+            {isCollapsed.value === undefined || isCollapsed.value ?
+            <div ref={bodyEl} class={`devui-panel-body ${isCollapsed.value !== undefined ? 'devui-panel-body-collapse': null}`}>
               <div class="d-panel-body">
                 { ctx.slots.body?.() }
               </div>
-            </div>: null } */}
-            <div ref={bodyEl} v-show={isCollapsed.value === undefined || isCollapsed.value} class={`devui-panel-body ${isCollapsed.value !== undefined ? 'devui-panel-body-collapse': null} ${(isCollapsed.value === undefined || isCollapsed.value) ? '' : 'devui-panel-body-closing'}`}>
-              <div class="d-panel-body">
-                { ctx.slots.body?.() }
-              </div>
-            </div>
+            </div>: null }
           </Transition>
           {footerContent}
         </div>
