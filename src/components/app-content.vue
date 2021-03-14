@@ -22,13 +22,10 @@
         </li>
       </ul>
       <nav class="side-nav">
-        <!-- TODO: 左侧组件导航 d-accordion -->
         <d-accordion :data="componentsData" :linkType="'routerLink'"></d-accordion>
       </nav>
     </div>
     <div class="doc-viewer-container">
-      <!-- TODO: 文档主体内容 -->
-      <!-- <app-demo-cell></app-demo-cell> -->
       <router-view :key="key"></router-view>
     </div>
   </div>

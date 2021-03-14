@@ -7,7 +7,6 @@
         <h3>何时使用</h3>
         <div style="margin-bottom: 20px" v-html="data.tmw"></div>
       </div>
-      <!-- TODO: d-tabs -->
       <d-tabs
         v-model="activeTab"
         :showContent="false"
@@ -19,7 +18,6 @@
     </div>
     <div class="examples-viewer">
       <div class="examples-viewer-wrapper">
-        <!-- TODO: Demo列表 -->
         <router-view></router-view>
       </div>
     </div>
