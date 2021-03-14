@@ -40,6 +40,8 @@ Tips: 该项目目前还处于孵化和演进阶段，欢迎大家一起参与�
 [to0simple](https://github.com/to0simple)
 
 目前负责的责任田有：
+- Alert
+- Panel
 - Codebox
 - Highlight
 
