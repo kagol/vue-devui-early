@@ -17,41 +17,6 @@ Tips: 该项目目前还处于孵化和演进阶段，欢迎大家一起参与�
 以下是项目进展和规划：
 [项目进展和规划](https://github.com/kagol/vue-devui/wiki/%E9%A1%B9%E7%9B%AE%E8%BF%9B%E5%B1%95%E5%92%8C%E8%A7%84%E5%88%92)
 
-# 贡献者花名册
-
-排名不分先后（按首字母排序）
-
-## flxy1028
-
-[flxy1028](https://github.com/flxy1028)
-
-目前负责的责任田有：
-- Tabs
-
-## kagol
-
-[kagol](https://github.com/kagol)
-
-目前负责的责任田有：
-- Accordion
-
-## to0simple
-
-[to0simple](https://github.com/to0simple)
-
-目前负责的责任田有：
-- Alert
-- Panel
-- Codebox
-- Highlight
-
-## Zcating
-
-[Zcating](https://github.com/Zcating)
-
-目前负责的责任田有：
-- Button
-
 # 快速开始
 
 ## 1 安装依赖
@@ -91,3 +56,38 @@ or
 
 npm run build
 ```
+
+# 贡献者花名册
+
+排名不分先后（按首字母排序）
+
+## flxy1028
+
+[flxy1028](https://github.com/flxy1028)
+
+目前负责的责任田有：
+- Tabs
+
+## kagol
+
+[kagol](https://github.com/kagol)
+
+目前负责的责任田有：
+- Accordion
+
+## to0simple
+
+[to0simple](https://github.com/to0simple)
+
+目前负责的责任田有：
+- Alert
+- Panel
+- Codebox
+- Highlight
+
+## Zcating
+
+[Zcating](https://github.com/Zcating)
+
+目前负责的责任田有：
+- Button
