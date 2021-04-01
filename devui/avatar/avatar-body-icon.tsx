@@ -13,7 +13,11 @@ export default defineComponent({
     setup(props) {
         return () => {
             return (
-                <svg style={{width: `${props.width}px`, height: `${props.height}px`, verticalAlign: 'middle'}} viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <svg 
+                style={{width: `${props.width}px`, height: `${props.height}px`, verticalAlign: 'middle'}} 
+                viewBox="0 0 30 30" 
+                version="1.1" 
+                xmlns="http://www.w3.org/2000/svg">
                     <g id="未命名" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <circle id="Oval" fill="#CACFD8" cx="15" cy="15" r="15"></circle>
                         <path

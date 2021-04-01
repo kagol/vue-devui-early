@@ -118,19 +118,49 @@ export default defineComponent({
     })
     
     return () => {
-      const hasImgSrc = imgSrc?.value && !isErrorImg.value ? <img src={imgSrc?.value} alt="" onError={showErrorAvatar} style={{height: `${height.value}px`, width: `${width.value}px`, borderRadius: isRound.value ? '100%' : '0'}}/> : null;
+      const imgElement = <img
+        src={imgSrc?.value} 
+        alt="" 
+        onError={showErrorAvatar} 
+        style={{
+          height: `${height.value}px`, 
+          width: `${width.value}px`, 
+          borderRadius: isRound.value ? '100%' : '0'
+        }}/>;
+      const hasImgSrc = imgSrc?.value && !isErrorImg.value ? imgElement : null;
 
-      const hasNameDisplay = !imgSrc?.value && !isNobody.value && nameDisplay.value?.length !== 0 ? <span class={`devui-avatar-style devui-avatar-background-${code.value}`} style={{height: `${height.value}px`, width: `${width.value}px`, lineHeight: `${height.value}px`, fontSize: `${fontSize.value}px`, borderRadius: isRound.value ? '100%' : '0'}}>
-        {nameDisplay.value}
-      </span> : null;
+      const nameElement = <span
+        class={`devui-avatar-style devui-avatar-background-${code.value}`} 
+        style={{
+          height: `${height.value}px`, 
+          width: `${width.value}px`, 
+          lineHeight: `${height.value}px`, 
+          fontSize: `${fontSize.value}px`, 
+          borderRadius: isRound.value ? '100%' : '0'
+          }}>
+          {nameDisplay.value}
+        </span>;
+      const hasNameDisplay = !imgSrc?.value && !isNobody.value && nameDisplay.value?.length !== 0 ? nameElement : null;
 
-      const hasNoDisplayName = !imgSrc?.value && !isNobody.value && nameDisplay.value?.length === 0 ? <span class={`devui-avatar-style`} style={{borderRadius: isRound.value ? '100%' : '0'}}>
-        <AvatarBodyIcon width={width.value} height={height.value}></AvatarBodyIcon>
-      </span> : null;
+      const noNameElement = <span
+        class={`devui-avatar-style`} 
+        style={{borderRadius: isRound.value ? '100%' : '0'}}>
+          <AvatarBodyIcon 
+            width={width.value} 
+            height={height.value}/>
+        </span>
+      const hasNoDisplayName = !imgSrc?.value && !isNobody.value && nameDisplay.value?.length === 0 ? noNameElement : null;
 
-      const noBody = (!imgSrc?.value && isNobody.value) ||isErrorImg.value ? <span class={`devui-avatar-style`} style={{borderRadius: isRound.value ? '100%' : '0'}}>
-        <AvatarNoBodyIcon width={width.value} height={height.value}></AvatarNoBodyIcon>
-      </span> : null; 
+      const noBodyElement = <span
+        class={`devui-avatar-style`} 
+        style={{
+          borderRadius: isRound.value ? '100%' : '0'
+          }}>
+          <AvatarNoBodyIcon
+            width={width.value} 
+            height={height.value}/>
+        </span>
+      const noBody = (!imgSrc?.value && isNobody.value) ||isErrorImg.value ? noBodyElement : null; 
       return (
         <span class="devui-avatar">
           { hasImgSrc }
